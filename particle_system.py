@@ -1,11 +1,13 @@
-import taichi as ti
-import numpy as np
-import trimesh as tm
 from functools import reduce
-from config_builder import SimConfig
-from WCSPH import WCSPHSolver
+
+import numpy as np
+import taichi as ti
+import trimesh as tm
+
 from DFSPH import DFSPHSolver
-from scan_single_buffer import parallel_prefix_sum_inclusive_inplace
+from WCSPH import WCSPHSolver
+from config_builder import SimConfig
+
 
 @ti.data_oriented
 class ParticleSystem:

@@ -1,7 +1,8 @@
-import os
 import argparse
+import os
+
 import taichi as ti
-import numpy as np
+
 from config_builder import SimConfig
 from particle_system import ParticleSystem
 
